@@ -1,0 +1,62 @@
+body{
+    background-color: #91483E;
+}
+
+.donate-button{
+    transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    /* background-color: grey; */
+    margin: 1em;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #91483E, #D65E3E);
+    box-shadow:  20px 20px 60px #91483E,
+             -20px -20px 60px #D65E3E;
+}
+.donate-button:active{
+    transform: scale(2, 0.5);
+    -moz-transform: scale(1.2, 0.5);
+}
+
+.input-container{
+    width: 100%;
+}
+.donate-input{
+    width: 70%;
+    border: none;
+    height: 3em;
+    padding-left: 1em;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(145deg, #91483E, #D65E3E);
+    box-shadow:  20px 20px 60px #91483E,
+             -20px -20px 60px #D65E3E;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]::placeholder
+{
+  color: white;
+}
+
+.submit-button{
+    width: 20%;
+    height: 3em;
+    margin: 1em;
+    border-radius: 50px;
+    border: none;
+    transition: .5s, color .10s;
+    background: linear-gradient(145deg, #91483E, #D65E3E);
+    box-shadow:  20px 20px 60px #91483E,
+             -20px -20px 60px #D65E3E;
+}
+.submit-button:active{
+    transform: scale(2, 0.5);
+    -moz-transform: scale(1.2, 0.5);
+}
+
+
+            
