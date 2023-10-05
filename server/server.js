@@ -4,8 +4,9 @@ const cors = require("cors");
 const mercadopago = require("mercadopago");
 
 // REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel
+const apiKey = import.meta.MERCADO_PAGO_KEY
 mercadopago.configure({
-    access_token: "<ACCESS_TOKEN>",
+    access_token: apiKey,
 });
 
 app.use(express.json());
@@ -41,14 +42,6 @@ app.post("/create_preference", (req, res) => {
         }).catch(function (error) {
             console.log(error);
         });
-});
-
-app.get('/feedback', function (req, res) {
-    res.json({
-        Payment: req.query.payment_id,
-        Status: req.query.status,
-        MerchantOrder: req.query.merchant_order_id
-    });
 });
 
 app.listen(8080, () => {
